@@ -1,4 +1,4 @@
-Bruno Cossar 
+Bruno Cossaro 
 =============
 
 A directory of the best-looking themes for Bruno blogs
