@@ -1,7 +1,7 @@
-Jekyll Themes
+Bruno Cossar 
 =============
 
-A directory of the best-looking themes for Jekyll blogs
+A directory of the best-looking themes for Bruno blogs
 
 
 Submitting a Theme
