@@ -3,6 +3,16 @@ layout: default
 title: Bruno Themes
 ---
 
+<!-- Párrafo de presentación -->
+<div class="row-fluid">
+  <div class="col-lg-12 text-center">
+    <p style="font-size: 1.2em; margin-bottom: 20px;">
+      ¡Welcome to my web corner! I'm Bruno and this is the space where I'll be sharing my thoughts and projects. Feel free to explore the gallery to see what I've been creating.
+    </p>
+  </div>
+</div>
+
+<!-- Formulario de búsqueda -->
 <div class="row-fluid">
   <div class="col-lg-12 text-center">
     <div class="form-group">
@@ -13,6 +23,7 @@ title: Bruno Themes
   </div>
 </div>
 
+<!-- Galería de posts -->
 <div class="gallery">
   {% for post in paginator.posts %}
   <div class="item">
@@ -24,20 +35,17 @@ title: Bruno Themes
   {% endfor %}
 </div>
 
-<!-- Pager -->
-
+<!-- Paginación -->
 <div class="row-fluid">
   <div class="span12">
     <div class="pagination">
       <ul>
         {% if paginator.previous_page %}
-
           {% if paginator.previous_page == 1 %}
             <li><a href="/">Prev</a></li>
           {% else %}
             <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
           {% endif %}
-
         {% else %}
           <li><span class="disabled">Prev</span></li>
         {% endif %}
@@ -49,7 +57,6 @@ title: Bruno Themes
         {% endif %}
 
         {% for count in (2..paginator.total_pages) %}
-
           {% if count == paginator.page %}
             <li><span class="active">{{ count }}</span></li>
           {% else %}
